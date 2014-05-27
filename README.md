@@ -14,7 +14,7 @@ How to use?
 
     > sp_PullSQLData  table_name
     
-    run the code (press F5) and the SP give you the code for migrate the data of the table
+    run the code and the SP give you the code for migrate the data of the table
 
 4. Copy the code
 5. In a new querry windows paste the code and press F5
