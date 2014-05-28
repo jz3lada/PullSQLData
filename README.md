@@ -8,7 +8,7 @@ If you can make same for other SGBD please contact me.
 How to use?
 ===========
 
-1. Copy the code in the Query editor and press F5 for execute the code
+1. Copy the code in the Query editor and execute the code
 2. Check the messages windows and make sure the query execute correctly, the expected message is "Command(s) completed successfully."
 3. In a new querry windows write same this:
 
@@ -17,7 +17,7 @@ How to use?
     run the code and the SP give you the code for migrate the data of the table
 
 4. Copy the code
-5. In a new querry windows paste the code and press F5
+5. In a new querry windows paste the code and execute the code
 
   5.1. You can filter the data for pull, add the sentence " where column_name = sentence " in the final of the code if you         want migrate especific data, maybe in a range of dates, etc, etc.
 
