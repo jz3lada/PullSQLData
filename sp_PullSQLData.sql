@@ -70,12 +70,11 @@ BEGIN
   
 	SELECT @Field =   
     CASE  
-		 WHEN @ColType IN (62) --Para Campos Float sin Redondeo  
+		 WHEN @ColType IN (62) --float
 			THEN 'RTRIM(CONVERT(VARCHAR(25), CONVERT(NUMERIC(19,4), ISNULL(' + @ColName + ',0))))'  
 		 WHEN @ColType IN (38,48,52,55,56,59,60,63,106,108,109,110,122)   
 			THEN 'RTRIM(CONVERT(VARCHAR(25),ISNULL('      + @ColName + ',0)))'  
 		 WHEN @ColType IN (61,111,58)          
-			--THEN @Quotes + ' + ' + 'CONVERT(CHAR(10),'   + @colname + ',111)' + ' + ' + @Quotes  
 			THEN @Quotes + ' + ' + 'CONVERT(CHAR(10),ISNULL('   + @ColName + ',''''),111)' + ' + ' + @Quotes  
 		 WHEN @ColType IN (45,50,47,37,39)         
 			THEN @Quotes + ' + ' + 'RTRIM(LTRIM(ISNULL(' + @ColName + ',0)))' + ' + ' + @Quotes   
