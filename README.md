@@ -24,7 +24,7 @@ How to use?
 6. Finally you get the code for migrate your data
 
 
-*Steps 1 and 2 only for the first time
+NOTE: Steps 1 and 2 only for the first time
 
 
 
